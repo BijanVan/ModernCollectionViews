@@ -51,7 +51,7 @@ class ItemBadgeSupplementaryViewController: UIViewController {
 
     private func configureDataSource() {
         let textCellRegistration = Self.createTextCellRegistration()
-        dataSource = UICollectionViewDiffableDataSource<Section, Model>(collectionView: collectionView) { (collectionView, indexPath, itemIdentifier) in
+        dataSource = UICollectionViewDiffableDataSource<Section, Model>(collectionView: collectionView) { collectionView, indexPath, itemIdentifier in
             return collectionView.dequeueConfiguredReusableCell(using: textCellRegistration, for: indexPath, item: itemIdentifier)
         }
         let supplementaryRegistration = Self.createSupplementaryRegistration(dataSource: dataSource)

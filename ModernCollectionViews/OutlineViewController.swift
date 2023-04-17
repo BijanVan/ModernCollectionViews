@@ -15,7 +15,7 @@ class OutlineViewController: UIViewController {
         prepareSubviews()
         styleSubviews()
 
-        navigationController?.pushViewController(ItemBadgeSupplementaryViewController(), animated: true)
+        navigationController?.pushViewController(CustomCellListViewController(), animated: true)
     }
 
     // MARK: Private functions

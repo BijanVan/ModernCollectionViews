@@ -7,5 +7,5 @@
 
 import Foundation
 
-let defaultSize = 40.0
+let defaultSize = 44.0
 let defaultSpacing = 8.0
